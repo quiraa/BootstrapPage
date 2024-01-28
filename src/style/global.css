@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+:root {
+  --primary: #fa7500;
+  --secondary: #10828c;
+  --light: #f0f0f0;
+  --dark: #333333;
+}
+
+body {
+  background-color: var(--light);
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--primary);
+}
+
+.nav-link {
+  color: var(--light);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all ease-in-out 0.125s;
+  border-radius: 4px;
+  margin: 5px;
+  text-align: center;
+  padding-left: 10px;
+}
+
+.nav-link:hover {
+  background-color: var(--light);
+  color: var(--primary);
+  transition: ease-in-out 0.125s;
+  border-radius: 4px;
+}
+
+.active {
+  color: var(--light);
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+  font-weight: 700;
+  color: var(--light);
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-toggler {
+  background: white !important;
+  color: var(--primary);
+}
+
+section {
+  padding: 96px 0px;
+}
+
+/* * Home Section */
+#home {
+  min-height: 100vh;
+  background: linear-gradient(
+      rgba(240, 240, 240, 0.85),
+      rgba(240, 240, 240, 0.85)
+    ),
+    url("../assets/img/home/home_bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.description {
+  position: absolute;
+  top: 35%;
+  margin: auto;
+  padding: 2rem;
+}
+
+.description h1 {
+  color: var(--primary);
+}
+
+.description p {
+  color: var(--dark);
+  font-size: 18px;
+  width: 70%;
+  line-height: 1.5;
+}
+
+.description button {
+  border: 2px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+}
+
+.description button:hover {
+  border: 2px solid var(--primary);
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+#about .desc {
+  padding: 2rem 1.5rem;
+  border-left: solid 4px var(--secondary);
+}
+
+#about .desc h2 {
+  color: var(--secondary);
+}
+
+#about .desc p {
+  line-height: 1.8;
+  color: var(--dark);
+}
+
+#portfolio h2 {
+  color: var(--primary);
+}
+
+#portfolio img {
+  height: 15rem;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+#blog h2 {
+  color: var(--primary);
+}
+
+#blog .card {
+  box-shadow: 0 0 20px #ccc;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+#blog .card img {
+  width: 100%;
+  height: 16rem;
+}
+
+#blog .card-title {
+  color: var(--primary);
+}
+
+#blog .card-body {
+  padding: 1rem;
+}
+
+#blog .card-footer a {
+  text-decoration: none;
+}
+
+#team h2 {
+  color: var(--primary);
+}
+
+#team .item {
+  position: relative;
+  margin: 10px 0;
+}
+
+#team .des {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 4px;
+  border-bottom-left-radius: 90%;
+}
+
+#team .item:hover .des {
+  height: 100%;
+  width: 93%;
+  background: #f973007d;
+  position: absolute;
+  padding: 5rem;
+  top: 0;
+  transition: 0.2s all ease-in-out;
+  border-bottom-left-radius: 0;
+}
+
+#contact h2 {
+  color: var(--primary);
+}
+
+#contact .right {
+  max-width: 600px;
+}
+
+#contact .right .btn-secondary {
+  background: var(--primary);
+  color: white;
+  border: 0;
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+textarea {
+  resize: none;
+}
+
+#contact .right .form-control::placeholder {
+  color: var(--dark);
+  font-size: 16px;
+}
+
+.footer {
+  background-color: var(--primary);
+}
+
+.footer h4 {
+  font-weight: 600;
+}
